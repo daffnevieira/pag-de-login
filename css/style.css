@@ -1,0 +1,117 @@
+/*
+FONTES *******
+*/
+@font-face{
+    font-family: Poppins-Regular;
+    src: url(/fonte/Poppins/Poppins-Regular.ttf);
+}
+@font-face{
+    font-family: Poppins-Medium;
+    src: url(/fonte/Poppins/Poppins-Medium.ttf);
+}
+/*
+PADRÕES *******
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins-Regular', Verdana, Geneva, Tahoma, sans-serif;
+}
+ul li, a{
+    list-style: none;
+    text-decoration: none;
+    color: var(--mainColor);
+}
+a:visited{
+    color: var(--second-color);
+}
+:root{
+    --text: rgba(0, 0, 0);
+    --mainColor: rgba(150, 11, 230, 0.856);
+    --second-color: rgba(31, 0, 49, 0.856);
+    --color-field: rgba(199, 160, 201, 0.37);
+    --transparent: rgb(255, 255, 255);
+}
+/*
+POSIÇÃO *******
+*/
+.container{
+    width: 100%;
+    margin: 0 auto  ;
+}
+.container, .flex-base{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.flex-base{
+    margin: 10px;
+    color: var(--second-color);
+}
+img{
+    margin-right: 30vh;
+}
+fieldset{
+    padding: 4vh 10vh 5vh 10vh;
+    background-color: var(--color-field);
+    border-radius: 20px;
+}
+span{
+    color: var(--text);
+    font-size: 25;
+}
+.inputw{
+    width: 90%;
+    border: 1px solid;
+    margin: 10px;
+    padding: 5px;
+    background-color: var(--transparent);
+    
+}
+
+.div-input{
+    margin: 10px;
+}
+button{
+    width: 40%;
+    margin-left: 20vh;
+    padding: 5px;
+    font-size: 15px;
+    font-family: Poppins-Regular;
+    background-color: var(--mainColor);
+    color: #fff;
+    border-style: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+ul{
+    margin-left: 20px;
+}
+li{
+    margin-bottom: 15px;
+}
+/*    PARÁGRAFO     */
+p{
+    margin: 20px 0 0 0 ;
+    color: var(--text);
+}
+/* Media Screen responsividade */
+
+@media (max-width: 700px) {
+    
+    #img{
+        display: none;
+    }
+    .flex-cont{
+        justify-content: center;
+    }
+    .flex-base{
+        width: 200px;
+    }
+}

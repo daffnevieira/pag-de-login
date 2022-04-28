@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Sign up</title>
+</head>
+<body>
+    <div class="container ">
+        <div class="flex-base">
+            <fieldset>
+                <form>
+                    <h1>Sign up</h1>
+                    <label class="div-input">
+                        <span>Name</span> <br>
+                        <input class="inputw" type="text" name="nom">
+                        
+                    </label>
+                    <label class="div-input">
+                        <span>Contact</span> <br>
+                        <input class="inputw" type="number" name="tel">
+                        
+                    </label>
+                    <label class="div-input">
+                        <span placeholder="Email">E-mail</span> <br>
+                        <input class="inputw" type="email" name="Email">
+                        
+                    </label>
+                    <label class="div-input">
+                        <span>Create a Password</span> <br>
+                        <input class="inputw" required type="password" name="password">
+                    </label>
+                    <label class="div-input">
+                        <button type="button" onclick="cadastrarUser()">Forward</button>
+                    </label>
+                </form>
+            </fieldset>
+            
+
+        </div>
+    </div>
+    
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="/código/app.js"></script>
+</body>
+</html>

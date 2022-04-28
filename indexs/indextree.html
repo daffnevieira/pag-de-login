@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Recover Password</title>
+</head>
+<body>
+    <div class="container ">
+        <div class="flex-base">
+        <fieldset>
+            <form>
+                <h1>Recover password</h1>
+                <p>*Your email to receive password recovery*</p>
+                <div class="div-input">
+                    <span>E-mail</span> <br>
+                    <input class="inputw" type="email" name="email">       
+                </div>
+                <button id="forward-btn" onclick="recuperarPass()">Forward</button>
+            </form>
+        </fieldset>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="/código/app.js"></script>
+</body>
+</html>

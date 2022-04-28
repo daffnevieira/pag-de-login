@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Sign in</title>
+</head>
+<body>
+    <div class="container">
+        <div class="flex-cont">
+            <div class="flex-base">
+                <img id="img" src="/imagem/Computer login-amico.png" width="500px"  alt="">
+                <fieldset>
+                    <form>
+                        <h1 style="margin: 20px;">Sign In</h1>
+                        <div class="div-input">
+                            <span placeholder="Email">E-mail</span> <br>
+                            <input class="inputw" type="email" name="Email">
+                            
+                        </div>
+                        <div class="div-input">
+                            <span data-placeholder="Senha">Password</span> <br>
+                            <input class="inputw" type="password" name="Senha">
+                        </div>
+                        <div class="div-input">
+                            <button onclick="entrarLogin()">Login</button>
+                        </div>
+                        <ul>
+                            <li>
+                                <span>Don't have <a href="indextwo.html">account?</a></span>
+                            </li>
+                            <li>
+                                <span>Did you forget <a href="indextree.html">password?</a></span>
+                            </li>
+                        </ul>
+                    </form>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="/código/app.js"></script>
+</body>
+</html>
